@@ -1,11 +1,11 @@
 import React from "react";
+import { ReactComponent as FacebookIcon } from '../assets/svg/icon-facebook.svg';
+import { ReactComponent as TwitterIcon } from '../assets/svg/X.svg';
+import { ReactComponent as YoutubeIcon } from '../assets/svg/youtube.svg';
 import {
-    ListItem,
     UnorderedList,
-    Wrap,
-    WrapItem,
-    Avatar,
     Link, OrderedList,
+    Avatar, WrapItem, Wrap,
 } from "@chakra-ui/react";
 
 import style from "./FOOTER_CSS/Footer.module.css";
@@ -23,7 +23,6 @@ const Footer = () => {
     let d = new Date();
     const FullYear = d.getFullYear();
     // console.log('FullYear:', FullYear)
-
 
     return (
         <div className={style.MainContainerForFooter}>
@@ -197,53 +196,53 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <div className={style.lineCover} style={{width: "110%"}}></div>
-                <div className="copyright width_common"
-                     style={{borderBottom: "1px solid #e5e5e5", borderTop: "1px solid #bdbdbd"}}>
-                    <p style={{position: "relative", top: "3px"}}>
+                <div className={`${style.copyright} ${style.width_common}`}
+                     style={{borderBottom: "1px solid #e5e5e5" ,width : "110%", borderTop: "1px solid #bdbdbd"}}>
+                    <p style={{position: "relative", top: "10px"}}>
                         <a title="VnExpress - Báo tiếng Việt nhiều người xem nhất" href="https://vnexpress.net/"
                            data-medium="Logo" className="logo_ft"
                            onClick={() => trackingLogoHome('logo-footer', this.href)}
                            data-itm-source="#vn_source=Home&amp;vn_campaign=Footer&amp;vn_medium=Logo&amp;vn_term=Desktop"
                            data-itm-added="1">
-                            <span style={{
-                                display: "inline-block",
-                                verticalAlign: "top",
-                                margin: "5px 8px 0 0",
-                                color: "#222"
-                            }}>Báo điện tử</span>
-                            <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v879/v2_2019/pc/graphics/logo.svg"
-                                 alt="VnExpress - Bao tieng Viet nhieu nguoi xem nhat"/>
+                            <div style={{display: 'flex', alignItems: 'center'}}>
+                        <span style={{
+                            display: "inline-block",
+                            verticalAlign: "top",
+                            margin: "0px 8px 0 0",
+                            color: "#222"
+                        }}>Báo điện tử</span>
+                                <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v879/v2_2019/pc/graphics/logo.svg"
+                                     alt="VnExpress - Bao tieng Viet nhieu nguoi xem nhat"/>
+                            </div>
                         </a>
                     </p>
-                    <div className="right flexbox">
-                        <a href="https://vnexpress.net/dieu-khoan-su-dung" data-medium="Menu-DieuKhoanSuDung"
+                    <div className={style.right}>
+                        <a href="https://vnexpress.net/dieu-khoan-su-dung" className={style.txtFollow}
                            title="Điều khoản sử dụng"
                            data-itm-source="#vn_source=Home&amp;vn_campaign=Footer&amp;vn_medium=Menu-DieuKhoanSuDung&amp;vn_term=Desktop"
                            data-itm-added="1">Điều khoản sử dụng</a>
-                        <a className="txt-follow" href="https://vnexpress.net/chinh-sach-bao-mat"
+                        <a className={style.txtFollow} href="https://vnexpress.net/chinh-sach-bao-mat"
                            data-medium="Menu-ChinhSachBaoMat" title="Chính sách bảo mật"
                            data-itm-source="#vn_source=Home&amp;vn_campaign=Footer&amp;vn_medium=Menu-ChinhSachBaoMat&amp;vn_term=Desktop"
                            data-itm-added="1">Chính sách bảo mật</a>
-                        <a className="txt-follow" href="https://vnexpress.net/chinh-sach-cookies"
+                        <a className={style.txtFollow} href="https://vnexpress.net/chinh-sach-cookies"
                            data-medium="Menu-Cookies" title="Cookies"
                            data-itm-source="#vn_source=Home&amp;vn_campaign=Footer&amp;vn_medium=Menu-Cookies&amp;vn_term=Desktop"
                            data-itm-added="1">Cookies</a>
-                        <a className="txt-follow" href="/rss" data-medium="Menu-Rss" title="RSS"
+                        <a className={style.txtFollow} href="/rss" data-medium="Menu-Rss" title="RSS"
                            data-itm-source="#vn_source=Home&amp;vn_campaign=Footer&amp;vn_medium=Menu-Rss&amp;vn_term=Desktop"
                            data-itm-added="1">RSS</a>
-                        <span className="txt-follow">Theo dõi VnExpress trên</span>
+                        <span className={style.txtFollow} style={{marginLeft: "20px"}}>Theo dõi VnExpress trên</span>
                         <a href="https://www.facebook.com/congdongvnexpress/" className="social_ft face_ft"
                            title="Facebook">
-                            {/* Replace with your Facebook SVG or Component */}
+                            <FacebookIcon/>
                         </a>
                         <a href="https://twitter.com/VnEnews" className="social_ft twitter_ft" title="Twitter">
-                            {/* Replace with your Twitter SVG or Component */}
+                            <TwitterIcon/>
                         </a>
-                        <a target="_blank"
-                           href="https://www.youtube.com/channel/UCVRqZH5QnrnbMWhElPBD-MQ?sub_confirmation=1"
+                        <a href="https://www.youtube.com/c/VnExpressOfficial"
                            className="social_ft youtube_ft" title="Youtube">
-                            {/* Replace with your Youtube SVG or Component */}
+                            <YoutubeIcon/>
                         </a>
                     </div>
                 </div>
@@ -262,7 +261,7 @@ const Footer = () => {
                         <div>
                             <a
                                 href="https://vnexpress.net/"
-                                rel="noopener"
+                                rel="noopener noreferrer"
                                 className="powered-by-wpcom"
                                 target="_blank"
                                 aria-label="Powered by vnexpress.net"
@@ -272,6 +271,7 @@ const Footer = () => {
                                     alt="Powered by vnexpress.net"
                                     width="187"
                                     height="26"
+                                    style={{marginTop : "15px"}}
                                 />
                             </a>
                         </div>

@@ -1,23 +1,21 @@
 import React from "react";
-import { ReactComponent as FacebookIcon } from '../assets/svg/icon-facebook.svg';
-import { ReactComponent as TwitterIcon } from '../assets/svg/X.svg';
-import { ReactComponent as YoutubeIcon } from '../assets/svg/youtube.svg';
+import {faFacebook, faTwitter, faYoutube} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import {
     UnorderedList,
     Link, OrderedList,
-    Avatar, WrapItem, Wrap,
 } from "@chakra-ui/react";
 
-import style from "./FOOTER_CSS/Footer.module.css";
+import style from "./Footer.module.css";
 
 
 function trackingLogoHome(label, url) {
     // Your tracking code here
     console.log(`Logo clicked with label: ${label} and url: ${url}`);
 }
+
 const Footer = () => {
-
-
 
 
     let d = new Date();
@@ -147,19 +145,19 @@ const Footer = () => {
                                     <p>Tải ứng dụng</p>
                                     <div className={style.contactLinks}>
                                         <div className={style.box}>
-                                            <a src="../assets/core-img/logo.png" href="#" title="VnExpress">
+                                            <Link href="#" title="VnExpress">
                                                 VnExpress
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className={style.box}>
-                                            <a src="../assets/core-img/logo.png" href="#" title="International">
+                                            <Link  href="#" title="International">
                                                 International
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <p>Liên hệ</p>
                                     <div className={style.contactLinks}>
-                                        <a className={style.box} data-medium="Menu-LienHeToaSoan"
+                                        <a className={style.box}
                                            title="Liên hệ tòa soạn"
                                            href="https://vnexpress.net/lien-he-toa-soan">
                                             Tòa soạn
@@ -233,16 +231,16 @@ const Footer = () => {
                            data-itm-source="#vn_source=Home&amp;vn_campaign=Footer&amp;vn_medium=Menu-Rss&amp;vn_term=Desktop"
                            data-itm-added="1">RSS</a>
                         <span className={style.txtFollow} style={{marginLeft: "20px"}}>Theo dõi VnExpress trên</span>
-                        <a href="https://www.facebook.com/congdongvnexpress/" className="social_ft face_ft"
+                        <a href="https://www.facebook.com/congdongvnexpress/"
                            title="Facebook">
-                            <FacebookIcon/>
+                            <FontAwesomeIcon icon={faFacebook} />
                         </a>
                         <a href="https://twitter.com/VnEnews" className="social_ft twitter_ft" title="Twitter">
-                            <TwitterIcon/>
+                            <FontAwesomeIcon icon={faTwitter} />
                         </a>
                         <a href="https://www.youtube.com/c/VnExpressOfficial"
                            className="social_ft youtube_ft" title="Youtube">
-                            <YoutubeIcon/>
+                            <FontAwesomeIcon icon={faYoutube} />
                         </a>
                     </div>
                 </div>
@@ -271,7 +269,7 @@ const Footer = () => {
                                     alt="Powered by vnexpress.net"
                                     width="187"
                                     height="26"
-                                    style={{marginTop : "15px"}}
+                                    style={{marginTop : "10px"}}
                                 />
                             </a>
                         </div>

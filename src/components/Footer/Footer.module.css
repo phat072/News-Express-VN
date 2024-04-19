@@ -235,7 +235,8 @@
 
 .contactLinks {
     display: flex;
-    justify-content: space-between; /* Nếu bạn muốn có khoảng cách giữa các liên kết */
+    /*justify-content: space-between;*/
+    text-align: center;
 }
 
 
@@ -248,7 +249,7 @@
 }
 
 .copyright .flexbox {
-    align-items: center;
+    text-align: center;
 }
 
 .copyright a {
@@ -256,17 +257,13 @@
     margin-left: 15px;
 }
 
-.FooterContainer .wrapContact .contact .contactLinks .a {
-    text-align: center;
-}
-
 .box {
     border: 1px solid #000; /* Change as needed */
     padding: 10px; /* Change as needed */
     display: flex;
-    align-items: center;
-    margin: 10px 10px;
-    width: 112px; /* Change as needed */
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    width: 120px; /* Change as needed */
 }
 
 .logo {
@@ -328,10 +325,12 @@
     float: left;
 }
 
-.copyright .txt-follow {
+.copyright .txtFollow {
     margin-left: 10px;
     padding-left: 10px;
     border-left: 1px solid #e5e5e5;
+    align-items: center;
+    align-content: center;
 }
 .copyright .right {
     margin-left: auto;

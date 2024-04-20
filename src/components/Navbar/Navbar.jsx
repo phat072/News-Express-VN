@@ -142,15 +142,6 @@ const Navbar = () => {
                                                 <li>Viral</li>
                                                 <li>Technology</li>
                                                 <li>Archives</li>
-                                                <button className={style.NavLinks_btn1}>
-                                                    <Link
-                                                        to="https://www.99acres.com/"
-
-                                                        rel="noreferrer"
-                                                    >
-                                                        99acres.com
-                                                    </Link>
-                                                </button>
                                             </ul>
                                             <ul className={style.ForAllUls}>
                                                 <li className={style.ForBoldLi}>Videos</li>

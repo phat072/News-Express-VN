@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap");
+
+
+.NavbarMainDiv {
+    /*background-color: black;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*color: white;*/
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.NavLinks {
+    display: flex;
+    /*gap: 8px;*/
+    /*border: 2px solid red;*/
+    margin: 10px 20px 10px 10%;
+    padding: 0 15px 0 15px;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+}
+.NavLinks li {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: sans-serif;
+    line-height: 30px;
+    margin: 5px 10px 0 5px;
+    display: block;
+
+}
+
+.NavLinks li:hover {
+    text-decoration: none;
+    border-bottom: 3px solid red;
+}
+
+.NavLinks_btn1 {
+    /*background-color: rgb(230, 240, 251);*/
+    /*color: black;*/
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 0 12px;
+    text-align: center;
+    display: block;
+}
+
+.MenuContainer {
+    margin-top: 4%;
+}
+
+.MenuFirstDiv {
+    display: flex;
+    width: 57%;
+    justify-content: space-between;
+    margin: 2% auto;
+}
+
+.ForAllUls li{
+    list-style: none;
+}
+
+.BlockLi {
+    display: block;
+    width: 100%;
+}
+
+.ForAllUls li:hover {
+    text-decoration: underline;
+    color: rgb(154, 2, 2);
+}
+
+.MenuFirstDiv ul button {
+    margin-top: 15px;
+}
+
+.ForBoldLi {
+    font-weight: bold;
+}
+
+hr {
+    width: 62%;
+    border: 2px solid rgb(182, 181, 181);
+    background-color: rgb(184, 184, 184);
+}
+
+.CloseButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #4B95DB;
+    background: #F5F5F5;
+    padding: 12px 45px;
+}
+
+/* ============================================================================================================ */
+
+/* ==========Before Media Queries Hidden Classes ====================== */
+
+.Media_logo_medium_screen {
+    display: none;
+}
+
+.MenuIconBtn_medium {
+    display: none;
+}
+
+.Subscribe_button {
+    display: none;
+}
+/* ============================================================================================================ */
+
+/* ============ MEDIA QUERIES ================== */
+
+@media only screen and (max-width: 768px) and (min-width: 433px) {
+    .NavbarMainDiv {
+        width: 100%;
+    }
+    .NavLinks {
+        display: none;
+    }
+
+    .Media_logo_medium_screen {
+        display: inline;
+        width: 160px;
+    }
+
+    .Media_logo_medium_screen div {
+        width: 180px;
+        height: 40px;
+        display: flex;
+    }
+
+    .MenuIconBtn {
+        display: none;
+    }
+
+    .MenuIconBtn_medium {
+        display: block;
+        padding: 0;
+    }
+
+    .NavbarMainDiv {
+        justify-content: unset;
+    }
+
+    .SearchIcondiv {
+        display: none;
+    }
+
+    .Subscribe_button_main {
+        margin-left: 40%;
+        width: 20%;
+        box-sizing: border-box;
+    }
+
+    .Subscribe_button {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* border: 1px solid yellow; */
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .Subscribe_button button {
+        background-color: rgb(255, 179, 0);
+        padding: 0 10px;
+        border-radius: 20px;
+        color: black;
+        box-sizing: border-box;
+    }
+
+    .Subscribe_button div img {
+        filter: invert(100%);
+        width: 20px;
+        height: 20px;
+    }
+
+    .NavLinks_btn1 {
+        margin: 10px 0;
+    }
+
+    .Black_modal_inner_logo {
+        width: 35%;
+        margin: auto;
+    }
+
+    .MenuContainer h3 {
+        font-weight: bold;
+        line-height: 40px;
+    }
+
+    .Media_logo_medium_screen_1 {
+        border-bottom: 1px solid rgb(87, 86, 86);
+        display: flex;
+        width: 100%;
+        padding: 6px 0;
+    }
+
+    .MultiLang {
+        border-top: 1px solid gray;
+    }
+    .MultiLang li {
+        list-style: none;
+        font-weight: bold;
+        line-height: 35px;
+    }
+
+    .Inner_subscribe_btn {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+}
+
+/* ==================================================================================================== */
+/* ===========Small Screens ============== */
+
+@media only screen and (max-width: 430px) and (min-width: 60px) {
+    .NavbarMainDiv {
+        width: 100%;
+    }
+    .NavLinks {
+        display: none;
+    }
+
+    .Media_logo_medium_screen {
+        display: inline;
+        width: 160px;
+    }
+
+    .Media_logo_medium_screen div {
+        width: 180px;
+        height: 40px;
+        display: flex;
+    }
+
+    .MenuIconBtn {
+        display: none;
+    }
+
+    .MenuIconBtn_medium {
+        display: block;
+        padding: 0px;
+    }
+
+    .NavbarMainDiv {
+        justify-content: unset;
+    }
+
+    .SearchIcondiv {
+        display: none;
+    }
+
+    .Subscribe_button_main {
+        margin-left: 20%;
+        width: 20%;
+        box-sizing: border-box;
+    }
+
+    .Subscribe_button {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* border: 1px solid yellow; */
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .Subscribe_button button {
+        background-color: rgb(255, 179, 0);
+        padding: 0 10px;
+        border-radius: 20px;
+        color: black;
+        box-sizing: border-box;
+    }
+
+    .Subscribe_button div img {
+        filter: invert(100%);
+        width: 20px;
+        height: 20px;
+    }
+
+    .NavLinks_btn1 {
+        margin: 10px 0;
+    }
+
+    .Black_modal_inner_logo {
+        width: 35%;
+        margin: auto;
+    }
+
+    .MenuContainer h3 {
+        font-weight: bold;
+        line-height: 40px;
+    }
+
+    .Media_logo_medium_screen_1 {
+        border-bottom: 1px solid rgb(87, 86, 86);
+        display: flex;
+        width: 100%;
+        padding: 6px 0;
+    }
+
+    .MultiLang {
+        border-top: 1px solid gray;
+    }
+    .MultiLang li {
+        list-style: none;
+        font-weight: bold;
+        line-height: 35px;
+    }
+
+    .Inner_subscribe_btn {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+}

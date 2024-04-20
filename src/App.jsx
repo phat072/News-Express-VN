@@ -2,15 +2,15 @@ import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer.jsx";
-import Logo from "./components/Logo/Logo.jsx";
+import Header from "./components/Header/Header.jsx";
 
 
 function App() {
     return (
         <div>
+            <Header />
             <Routes>
             </Routes>
-            <Logo />
             <Footer />
         </div>
     );

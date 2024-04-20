@@ -2,7 +2,7 @@ import style from "./Logo.module.css";
 import React, {useState, useEffect, useRef} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
-import {Link} from "@chakra-ui/react";
+import { Link } from 'react-router-dom';
 import { faSearch} from "@fortawesome/free-solid-svg-icons";
 import { faUserAlt } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
@@ -134,13 +134,16 @@ const Logo = () => {
                 </button>
                 <div className={style.timeNow}>
                     <label><FontAwesomeIcon icon={faUserAlt}/></label>
-                    <a style={{marginLeft: "8px"}}>
-                        Đăng nhập
-                    </a>
-                    <a style={{marginLeft: "16px"}}>
-                        <label><FontAwesomeIcon icon={faBell}/></label>
-
-                    </a>
+                    <Link to="./login" rel="noreferrer">
+                        <button style={{marginLeft: "8px"}}>
+                            Đăng nhập
+                        </button>
+                    </Link>
+                    <label className={style.LabelWithPointer}>
+                        <button style={{marginLeft: "16px"}}>
+                            <FontAwesomeIcon icon={faBell}/>
+                        </button>
+                    </label>
                 </div>
 
             </div>

@@ -23,6 +23,10 @@ header {
     unicode-bidi: isolate;
 }
 
+.LabelWithPointer {
+    cursor: pointer;
+}
+
 /*div {*/
 /*    display: block;*/
 /*    unicode-bidi: isolate;*/

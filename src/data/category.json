@@ -1,0 +1,281 @@
+[
+  {
+    "id": 0,
+    "cate": "thoisu",
+    "title": "Thời sự",
+    "sub": [
+        "Chính trị",
+        "Dân sinh",
+        "Lao động - Việc làm",
+        "Giao thông",
+        "Me Kong",
+        "Quỹ hy vọng"
+    ]
+  },
+  {
+    "id": 1,
+    "cate": "gocnhin",
+    "title": "Góc nhìn",
+    "sub": [
+        "Bình luận nhiều",
+        "Chính trị & chính sách",
+        "Y tế & sức khỏe",
+        "Kinh doanh & quản trị",
+        "Giáo dục & tri thức",
+        "Môi trường",
+        "Văn hóa & lối sống",
+        "Covid 19",
+        "Tác giả"
+    ]
+  },
+  {
+    "id": 2,
+    "cate": "thegioi",
+    "title": "Thế giới",
+    "sub": [
+        "Tư liệu",
+        "Phân tích",
+        "Người Việt 5 châu",
+        "Cuộc sống đó đây",
+        "Quân sự"
+    ]
+  },
+  {
+    "id": 3,
+    "cate": "video",
+    "title": "Video",
+    "sub": [
+        "Thời sự",
+        "Nhịp sống",
+        "Food",
+        "Pháp luật",
+        "Giải trí",
+        "Thế giới",
+        "Khoa học",
+        "Thể thao",
+        "Giáo dục",
+        "Xe",
+        "Số hóa",
+        "Du lịch",
+        "Sức khỏe",
+        "Chủ đề"
+    ]
+  },
+  {
+    "id": 4,
+    "cate": "podcasts",
+    "title": "Podcasts",
+    "sub": [
+      "VnExpress hôm nay",
+      "Tâm điểm kinh tế",
+      "Tài chính cá nhân",
+      "Giải mã",
+      "Hộp đen",
+      "Thầm thì",
+      "Tôi kể",
+      "Bạn ổn không?",
+      "Điểm tin",
+      "Tiền làm gì?",
+      "Họ nói gì?",
+      "Ly hôn",
+      "Người tiên phong",
+      "Kế hoạch lạc quan",
+      "360° World Cup",
+      "Tôi trong gương",
+      "Chuyện đi làm",
+      "Úp mở 18+",
+      "Nguy - Cơ"
+    ]
+  },
+  {
+    "id": 5,
+    "cate": "kinhdoanh",
+    "title": "Kinh doanh",
+    "sub": [
+      "Quốc tế",
+      "Doanh nghiệp",
+      "Chứng khoán",
+      "Ebank",
+      "Vĩ mô",
+      "Tiền của tôi",
+      "Bảo hiểm",
+      "Hàng hóa"
+    ]
+  },
+  {
+    "id": 6,
+    "cate": "batdongsan",
+    "title": "Bất động sản",
+    "sub": [
+      "Chính sách",
+      "Thị trường",
+      "Dự án",
+      "Không gian sống",
+      "Tư vấn"
+    ]
+  },
+  {
+    "id": 7,
+    "cate": "khoahoc",
+    "title": "Khoa học",
+    "sub": [
+      "Khoa học trong nước",
+      "Chỉ số PII",
+      "Tin tức",
+      "Phát minh",
+      "Ứng dụng",
+      "Thế giới tự nhiên",
+      "Thường thức",
+      "Sáng kiến Khoa học 2024"
+    ]
+  },
+  {
+    "id": 8,
+    "cate": "giaitri",
+    "title": "Giải trí",
+    "sub": [
+      "Giới sao",
+      "Sách",
+      "Video",
+      "Phim",
+      "Nhạc",
+      "Thời trang",
+      "Làm đẹp",
+      "Sân khấu - Mỹ thuật"
+    ]
+  },
+  {
+    "id": 9,
+    "cate": "thethao",
+    "title": "Thể thao",
+    "sub": [
+      "Bóng đá",
+      "Lịch thi đấu",
+      "Marathon",
+      "Tennis",
+      "Các môn khác",
+      "Hậu trường",
+      "Ảnh",
+      "Video"
+    ]
+  },
+  {
+    "id": 10,
+    "cate": "phapluat",
+    "title": "Pháp luật",
+    "sub": [
+      "Hồ sơ phá án",
+      "Tư vấn",
+      "Video"
+    ]
+  },
+  {
+    "id": 11,
+    "cate": "giaoduc",
+    "title": "Giáo dục",
+    "sub": [
+      "Tin tức",
+      "Tuyển sinh",
+      "Chân dung",
+      "Du học",
+      "Thảo luận",
+      "Học tiếng Anh",
+      "Giáo dục 4.0"
+    ]
+  },
+  {
+    "id": 12,
+    "cate": "suckhoe",
+    "title": "Sức khỏe",
+    "sub": [
+      "Tin tức",
+      "Tư vấn",
+      "Dinh dưỡng",
+      "Khỏe đẹp",
+      "Đàn ông",
+      "Các bệnh",
+      "Vaccine"
+    ]
+  },
+  {
+    "id": 13,
+    "cate": "doisong",
+    "title": "Đời sống",
+    "sub": [
+      "Nhịp sống",
+      "Tổ ấm",
+      "Bài học sống",
+      "Cooking",
+      "Tiêu dùng"
+    ]
+  },
+  {
+    "id": 14,
+    "cate": "dulich",
+    "title": "Du lịch",
+    "sub": [
+      "Điểm đến",
+      "Ẩm thực",
+      "Dấu chân",
+      "Tư vấn",
+      "Cẩm nang",
+      "Ảnh"
+    ]
+  },
+  {
+    "id": 15,
+    "cate": "sohoa",
+    "title": "Số hóa",
+    "sub": [
+      "Công nghệ",
+      "Sản phẩm",
+      "Blockchain",
+      "Kinh nghiệm",
+      "GameVerse 2024"
+    ]
+  },
+  {
+    "id": 16,
+    "cate": "xe",
+    "title": "Xe",
+    "sub": [
+      "Thị trường",
+      "Car Awards 2023",
+      "Diễn đàn",
+      "V-Car",
+      "V-Bike",
+      "Cầm lái",
+      "Thi bằng lái",
+      "Mua bán"
+    ]
+  },
+  {
+    "id": 17,
+    "cate": "ykien",
+    "title": "Ý kiến",
+    "sub": [
+      "Thời sự",
+      "Đời sống"
+    ]
+  },
+  {
+    "id": 18,
+    "cate": "tamsu",
+    "title": "Tâm sự",
+    "sub": [
+      "Hẹn hò"
+    ]
+  },
+  {
+    "id": 19,
+    "cate": "thugian",
+    "title": "Thư giãn",
+    "sub": [
+      "Cười",
+      "Đố vui",
+      "Chuyện lạ",
+      "Crossword",
+      "Thú cưng"
+    ]
+  }
+]

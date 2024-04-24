@@ -1,14 +1,22 @@
-import React from 'react'
-import Logo from '../Logo/Logo'
-import Navbar from '../Navbar/Navbar'
+
+import { BackTop } from 'antd';
+import { Outlet } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar.jsx';
+import Footer from "../Footer/Footer.jsx";
+
 
 const Header = () => {
-    return (
-        <div>
-            <Logo/>
-            <Navbar/>
-        </div>
-    )
-}
 
-export default Header
+    return (
+        <>
+            <Navbar/>
+            <div>
+                <Outlet/>
+            </div>
+            <Footer/>
+            <BackTop/>
+        </>
+    );
+};
+
+export default Header;

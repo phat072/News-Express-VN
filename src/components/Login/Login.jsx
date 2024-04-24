@@ -25,7 +25,7 @@ const getData = () => {
 
 const Login = () => {
     useEffect(() => {
-        document.title = "Login Page: Latest News, India News, Breaking News, Today's News Headlines Online, English News Top Stories, Coronavirus News, IPL 2022 Updates|The Indian Express";
+        document.title = "Login Page: Latest News, Vietnam News, Breaking News, Today's News Headlines Online - Vietnam News Express";
     }, [])
     const navigate = useNavigate();
     const [submit, setSubmit] = useState(getData());
@@ -57,7 +57,7 @@ const Login = () => {
         setSubmit([...submit, signInCreds]);
         setSignInCreds("");
         setIsUser(true);
-        alert("Thank! You're Successfully Signed In to Indian Express");
+        alert("Thank! You're Successfully Signed In to Vietnam News Express");
     };
 
     useEffect(() => {
@@ -84,7 +84,7 @@ const Login = () => {
                 login[0].email === submit[i].email &&
                 login[0].password === submit[i].password
             ) {
-                alert(`Thank! You're Successfully Signed In to Indian Express`);
+                alert(`Thank! You're Successfully Signed In to Vietnam News Express`);
                 navigate("/");
             } else {
                 alert(`Wrong Email Or Password`);
@@ -112,7 +112,7 @@ const Login = () => {
                 <div>
                     <img
                         src="https://s1.vnecdn.net/vnexpress/restruct/i/v879/v2_2019/pc/graphics/logo.svg"
-                        alt="IndianExpress"
+                        alt="Vietnam News Express"
                         style={{ width: "250px", marginRight : "15px"}}
                     />
                 </div>
@@ -210,7 +210,7 @@ const Login = () => {
 
                         <div className={style.TakingSignIn}>
                             <div>
-                                <Text color="gray.500">New to Indian Express?</Text>
+                                <Text color="gray.500">New to Vietnam News Express?</Text>
                             </div>
                             <div onClick={GoToSignIn}>
                                 <h1>Create an account to get started</h1>
@@ -250,7 +250,7 @@ const Login = () => {
                             <div>
                                 <input type="checkbox" />
                                 <p>
-                                    Yes, I'd like to receive The Indian Express daily newsletter.
+                                    Yes, I'd like to receive The Vietnam News Express daily newsletter.
                                 </p>
                             </div>
                             <div>

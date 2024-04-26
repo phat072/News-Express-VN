@@ -1,11 +1,10 @@
-
 import { BackTop } from 'antd';
 import { Outlet } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar.jsx';
 import Footer from "../Footer/Footer.jsx";
 
 
-const Header = () => {
+const MainPage = () => {
 
     return (
         <>
@@ -19,4 +18,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default MainPage;

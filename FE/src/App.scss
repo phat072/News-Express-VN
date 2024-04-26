@@ -1,4 +1,4 @@
-@use './scss/index' as *;
+@use './scss/' as *;
 @import '~antd/dist/antd.css';
 
 @import 'react-slideshow-image/dist/styles.css';
@@ -55,5 +55,8 @@ a {
 ::-webkit-scrollbar-thumb
 {
   border-radius: 10px;
-  background-image: linear-gradient(to top, rgba($main-color, 0.5) 44%, rgba($main-color, 0.8) 72%, $main-color 86%);
+  background-image: -webkit-gradient(linear,left bottom,left top,
+          color-stop(0.44, rgba($main-color, 0.5)),
+          color-stop(0.72, rgba($main-color, 0.8)),
+          color-stop(0.86, $main-color));
 }

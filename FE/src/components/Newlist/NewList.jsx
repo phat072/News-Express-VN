@@ -1,5 +1,5 @@
 import React from 'react';
-import './news-list.scss';
+import './NewList.scss';
 import defaultImg from '../../assets/react.svg';
 
 import { List } from 'antd';

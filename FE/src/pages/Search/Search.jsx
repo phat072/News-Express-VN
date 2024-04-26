@@ -6,7 +6,7 @@ import NewsList from '../../components/Newlist/NewList.jsx';
 import data from '../../data/data.json';
 
 const Search = () => {
-    const [items, setItems] = useState();
+    const [setItems] = useState();
     const {search_title} = useParams();
     useEffect(() => {
         const getData =  async () => {

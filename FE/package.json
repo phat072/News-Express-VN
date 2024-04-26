@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "./node_modules/.bin/react-scripts start",
+    "build": "./node_modules/.bin/react-scripts build",
+    "test": "./node_modules/.bin/react-scripts test",
+    "eject": "./node_modules/.bin/react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +52,7 @@
     "react-slideshow-image": "^4.3.1",
     "react-spinners-components": "^2.0.4",
     "sass": "^1.53.0",
+    "start": "^5.1.0",
     "web-vitals": "^2.1.4"
   }
 }

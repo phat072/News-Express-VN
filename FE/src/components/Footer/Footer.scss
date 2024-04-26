@@ -1,4 +1,4 @@
-@use "../../scss/index" as *;
+@use "../../scss/" as *;
 
 .footer {
     padding-top: 40px;
@@ -6,11 +6,11 @@
 
         &-top {
             display: grid;
-            grid-template-columns: auto 30%;
-            padding: 20px 0px;
+            grid-template-columns: auto 27%;
+            padding: 20px 0;
             column-gap: 30px;
             border-top: 5px solid #eee;
-            border-bottom: 3px solid lightgrey;
+            border-bottom: 1px solid #777;
             @include tablet {
                 display: block;
             }
@@ -77,7 +77,7 @@
         }
 
         &-bottom {
-            padding: 20px 0px;
+            padding: 20px 0;
             @include flex(center, space-between);
             @include mobile {
                 flex-direction: column;

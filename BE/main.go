@@ -147,7 +147,7 @@ func registerHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/login", loginHandler)
-	http.HandleFunc("/logouth", logoutHandler)
+	http.HandleFunc("/logout", logoutHandler)
 	http.HandleFunc("/register", registerHandler)
 	http.HandleFunc("/dashboard", dashboardHandler)
 	dbConn()

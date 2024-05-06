@@ -7,7 +7,7 @@ const newsApi = {
         return axiosClient.get(url, {params});
     },
     getNewsTopHeadline: (params) => {
-        const url = 'top-headlines';
+        const url = 'title-news';
         return axiosClient.get(url, {params});
     },
 }

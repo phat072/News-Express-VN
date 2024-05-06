@@ -3,7 +3,7 @@ import './SlideNewsGrid.scss';
 import defaultImg from '../../assets/react.svg';
 import React, { useState, useEffect } from 'react';
 import newsApi from '../../api/newsApi';
-import data from '../../data/data.json';
+import data from '../../data/data_cr.json';
 const { Meta } = Card;
 
 const SlideNewsGrid = (props) => {
@@ -11,7 +11,7 @@ const SlideNewsGrid = (props) => {
     useEffect(() => {
         const getData = async () => {
             const params = {
-                country: 'us',
+                country: 'vn',
                 category: props.category,
             };
             const response = await newsApi.getNewsTopHeadline(params);
